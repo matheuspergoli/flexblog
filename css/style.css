@@ -1,0 +1,395 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body, h1, h2, p, ul, li, a {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  color: #222;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Superinfo */
+.superinfo-bg {
+  color: white;
+  background-color: #122ab2;
+}
+
+.superinfo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 960px;
+  padding-top: 10px;
+}
+
+.superinfo p, .superinfo a {
+  margin: 0px 10px 10px 10px;
+}
+
+.superinfo a {
+  color: white;
+}
+
+/* Menu */
+.menu-bg {
+  background-color: #2c70ff;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 960px;
+  padding: 15px 0px;
+}
+
+.menu a {
+  color: white;
+}
+
+.menu-logo a {
+  margin: 0px 10px;
+  font-weight: bold;
+  font-size: 2.25em;
+}
+
+.menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-nav a {
+  display: block;
+  padding: 10px;
+  font-size: 1.25em;
+}
+
+.menu-nav a:hover {
+  color: #122ab2;
+}
+
+/* Introdução */
+.introducao {
+  margin: auto;
+  line-height: 1;
+  font-size: 3em;
+  max-width: 960px;
+  padding: 60px 10px;
+}
+
+/* Sobre */
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 960px;
+  padding: 60px 0px;
+  border-top: 2px solid #2c70ff;
+  border-bottom: 2px solid #2c70ff;
+}
+
+.sobre-info {
+  flex: 2 1 300px;
+  margin: 0px 10px;
+}
+
+.sobre-info h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.sobre-info p {
+  color: #7c7c7c;
+  line-height: 1.4;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+}
+
+.sobre-img {
+  flex: 1 1 160px;
+  margin: 0px 10px;
+}
+
+/* Produtos */
+.produtos {
+  max-width: 960px;
+  margin: 60px auto;
+}
+
+.produtos h1 {
+  font-size: 3em;
+  margin: 0px 10px 60px 10px;
+}
+
+.produtos-container {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.produtos-item {
+  flex: 1 1 175px;
+  margin: 10px;
+}
+
+.produtos-item h2 {
+  font-size: 3em;
+  color: #a4a4a4;
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+}
+
+.purple {
+  border-top: 8px solid #ae81ff;
+}
+
+.pink {
+  border-top: 8px solid #f9265e;
+}
+
+.blue {
+  border-top: 8px solid #66d9eb;
+}
+
+/* Preço */
+.preco {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 60px;
+  background-color: #f7f7f7;
+}
+
+.preco-item {
+  flex: 1 1 260px;
+  margin: 10px;
+  padding: 20px;
+  border: 4px solid white;
+}
+
+.preco-item h2 {
+  font-size: 3em;
+  color: #a4a4a4;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.preco-item span {
+  display: block;
+  font-size: 3em;
+  max-width: 300px;
+  margin: 20px auto;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0px 5px 0px;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+.preco-item sup {
+  font-size: 1.5rem;
+}
+
+.preco-item ul {
+  color: #7c7c7c;
+  max-width: 300px;
+  font-size: 1.25em;
+  margin: 20px auto;
+  font-style: italic;
+}
+
+.preco-item li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.preco-item li::after {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #2c70ff;
+}
+
+.preco-item a {
+  display: block;
+  color: #222;
+  max-width: 300px;
+  margin: 20px auto;
+  border: 4px solid;
+  font-weight: bold;
+  font-size: 2.25em;
+  padding: 15px 0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .preco {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .preco .preco-item:nth-child(3) {
+    order: 1;
+  }
+
+  .preco .preco-item:nth-child(2) {
+    order: 2;
+  }
+
+  .preco .preco-item:nth-child(1) {
+    order: 3;
+  }
+}
+
+/* Qualidade */
+.qualidade {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 60px auto;
+}
+
+.qualidade-item {
+  flex: 1 1 300px;
+  margin: 20px 10px;
+}
+
+.qualidade-item h2 {
+  color: #a4a4a4;
+  font-size: 2.25em;
+  margin-bottom: 20px;
+}
+
+.qualidade-item h2::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.qualidade-item:nth-of-type(3n+1) h2::before {
+  background-color: #ae81ff;
+}
+
+.qualidade-item:nth-of-type(3n+2) h2::before {
+  background-color: #f9265e;
+}
+
+.qualidade-item:nth-of-type(3n+3) h2::before {
+  background-color: #66d9eb;
+}
+
+.qualidade-item p {
+  line-height: 1.4;
+  color: #7c7c7c;
+  font-size: 1.25em;
+}
+
+/* Newsletter */
+.newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f7f7f7;
+  padding: 60px calc((100% - 960px) / 2) ;
+}
+
+.newsletter-info {
+  flex: 1 1 240px;
+  margin: 0px 10px;
+}
+
+.newsletter-info h1 {
+  font-size: 3em;
+  color: #a4a4a4;
+}
+
+.newsletter-info p {
+  color: #7c7c7c;
+  max-width: 230px;
+  font-size: 1.25em;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2 1 260px;
+  margin: 0px 10px;
+  align-self: center;
+}
+
+.newsletter-form input {
+  flex: 3 1 260px;
+  margin: 0px;
+  color: #7c7c7c;
+  font-size: 1.25em;
+  padding: 15px 10px;
+  border-radius: 0px;
+  font-style: italic;
+  border: 4px solid #2c70ff;
+  background-color: transparent;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+.newsletter-form button {
+  flex: 1 1 260px;
+  margin: 0px;
+  border: 0px;
+  color: white;
+  cursor: pointer;
+  font-size: 2.25em;
+  font-weight: bold;
+  padding: 15px 10px;
+  text-transform: uppercase;
+  background-color: #2c70ff;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .newsletter-form button {
+    font-size: 1.5em;
+  }
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  background-color: #2c70ff;
+}
+
+.footer p {
+  flex: 1;
+  color: #122ab2;
+  font-size: 2.25em;
+  text-align: center;
+}
